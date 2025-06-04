@@ -28,13 +28,14 @@ Ve a la consola de Google Cloud y y busca **Kubernetes Engine**
 Paso 2: Configurar kubectl para acceder al cluster GKE
 -------------
 1. Obtener credenciales de GKE:
-Pedira tener el plugin de auth de GCP: gcloud components install gke-gcloud-auth-plugin
+
+Pedira tener el plugin de auth de GCP: ```gcloud components install gke-gcloud-auth-plugin```
    Ejecuta el siguiente comando para obtener las credenciales de acceso del cluster GKE:
    ```bash
    gcloud container clusters get-credentials mi-cluster-gke --zone <zona> --project <tu-proyecto>
    ```
 
-2. Verificar la conexión al cluster:
+3. Verificar la conexión al cluster:
    Ejecuta el siguiente comando para verificar que kubectl está conectado correctamente al cluster:
    ```bash
    kubectl get nodes
