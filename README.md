@@ -73,7 +73,7 @@ Paso 1: Crear un Deployment
 Configura tu imagen y port de acuerdo a tu aplicación.
    
 Si tienes alguna variable de entorno puedes agregarlo asi:
-   ```
+   ```yaml
    spec:
       containers:
       ....
