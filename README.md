@@ -5,7 +5,7 @@ Este proyecto demuestra como se puede desplegar una app como servicio y escalarl
 Requisitos:
 -----------
 1. Crear una cuenta de google cloud, si no la tienes puedes crearla en https://cloud.google.com/
-2. Instalación de Google Cloud SDK: Instalar y configurar el SDK de Google Cloud. Puedes seguir esta guía para instalarla: https://cloud.google.com/sdk/docs/install
+2. Instalación de Google Cloud SDK: Instalar y configurar el SDK de Google Cloud. Puedes seguir esta guía para instalarla: https://cloud.google.com/sdk/docs/install y kubectl https://kubernetes.io/docs/tasks/tools/
 3. Configuración de acceso a Google Cloud: Configura tu CLI de Google Cloud ejecutando:
 
    ```gcloud init```
