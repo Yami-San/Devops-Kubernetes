@@ -73,34 +73,31 @@ Paso 1: Crear un Deployment
 Configura tu imagen y port de acuerdo a tu aplicación.
    
 Si tienes alguna variable de entorno puedes agregarlo asi:
-```yaml
-apiVersion: apps/v1
-kind: Deployment
-metadata:
+   ```yaml
+   apiVersion: apps/v1
+   kind: Deployment
+   metadata:
      name: mi-app
-spec:
-  replicas: 2
-  selector:
-    matchLabels:
-      app: mi-app
-  template:
-    metadata:
-      labels:
-        app: mi-app
-    spec:
-      containers:
-      - name: mi-app-container
-        image: yamitan/mi-proyecto:latest
-        ports:
-        - containerPort: 3000
-        env:
-        - name: secret1
-          value: "value"
-        - name: secret2
-          value: "value"
-        - name: secret3
-          value: "value"
-
+   spec:
+     replicas: 2
+     selector:
+       matchLabels:
+         app: mi-app
+     template:
+       metadata:
+         labels:
+           app: mi-app
+       spec:
+         containers:
+         - name: mi-app
+           image: yamitan/mi-proyecto:latest
+           ports:
+           - containerPort: 3000
+           env:
+           -name: secret1
+           value: "value"
+           -name: secret2
+           value: "value"
    ```
 2. Desplegar el Deployment:
    Aplica el archivo YAML:
