@@ -108,7 +108,7 @@ Paso 1: Escalar el Deployment
 -------------
 1. Para escalar el número de Pods en tu aplicación, ejecuta:
    ```bash
-   kubectl scale deployment mi-aplicacion --replicas=4
+   kubectl scale deployment mi-app --replicas=4
    ```
 
 2. Verifica el nuevo número de Pods con:
