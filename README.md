@@ -144,6 +144,14 @@ Paso 1: Escalar el Deployment
    kubectl get pods
    ```
 
+Probar tu aplicación:
+--------------
+Ejecuta:
+kubectl get svc mi-app-service
+  ```bash
+  kubectl get svc mi-app-service
+  ```
+Ahora puedes hacer curl con el External-IP por ejemplo curl http://30.23...
 Limpiar recursos
 --------------
 1. Para eliminar el Deployment y el Servicio, ejecuta:
