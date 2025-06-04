@@ -53,20 +53,20 @@ Paso 1: Crear un Deployment
    apiVersion: apps/v1
    kind: Deployment
    metadata:
-     name: mi-aplicacion
+     name: mi-app
    spec:
-     replicas: 2
+     replicas: 1
      selector:
        matchLabels:
-         app: mi-aplicacion
+         app: mi-app
      template:
        metadata:
          labels:
-           app: mi-aplicacion
+           app: mi-app
        spec:
          containers:
-         - name: mi-aplicacion
-           image: nginx:latest
+         - name: mi-app
+           image: docker.io/yamitan/mi-proyecto:latest
            ports:
            - containerPort: 80
    ```
