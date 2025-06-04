@@ -94,10 +94,10 @@ Si tienes alguna variable de entorno puedes agregarlo asi:
            ports:
            - containerPort: 3000
            env:
-           -name: secret1
-           value: "value"
-           -name: secret2
-           value: "value"
+           - name: secret1
+             value: "value"
+           - name: secret2
+             value: "value"
    ```
 2. Desplegar el Deployment:
    Aplica el archivo YAML:
