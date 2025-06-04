@@ -66,11 +66,23 @@ Paso 1: Crear un Deployment
        spec:
          containers:
          - name: mi-app
-           image: docker.io/yamitan/mi-proyecto:latest
+           image: yamitan/mi-proyecto:latest
            ports:
            - containerPort: 3000
    ```
-
+Configura tu imagen y port de acuerdo a tu aplicación.
+   
+Si tienes alguna variable de entorno puedes agregarlo asi:
+   ```
+   spec:
+      containers:
+      ....
+      env:
+      -name: secret1
+      value: "secret value"
+      -name: secret2
+      value: "secret2 value"
+   ```
 2. Desplegar el Deployment:
    Aplica el archivo YAML:
    ```bash
