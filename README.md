@@ -74,14 +74,33 @@ Configura tu imagen y port de acuerdo a tu aplicación.
    
 Si tienes alguna variable de entorno puedes agregarlo asi:
    ```yaml
-   spec:
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mi-app
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: mi-app
+  template:
+    metadata:
+      labels:
+        app: mi-app
+    spec:
       containers:
-      ....
-      env:
-      -name: secret1
-      value: "secret value"
-      -name: secret2
-      value: "secret2 value"
+      - name: mi-app-container
+        image: yamitan/mi-proyecto:latest
+        ports:
+        - containerPort: 3000
+        env:
+        - name: secret1
+          value: "value"
+        - name: secret2
+          value: "value"
+        - name: secret3
+          value: "value"
+
    ```
 2. Desplegar el Deployment:
    Aplica el archivo YAML:
