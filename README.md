@@ -41,6 +41,7 @@ Pedira tener el plugin de auth de GCP: ```gcloud components install gke-gcloud-a
    ```bash
    kubectl get nodes
    ```
+Te dira No resources found debido a que aún no se han desplegado servicios.
 
 Hacer deploy de una aplicación
 ------------
