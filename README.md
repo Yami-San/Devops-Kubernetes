@@ -19,7 +19,7 @@ Ve a la consola de Google Cloud y y busca **Kubernetes Engine**
    - En la consola de GKE, haz clic en **Crear Cluster**.
    - Completa los detalles:
      - **Cluster name**: mi-cluster-gke
-     - **Location**: Selecciona la zona o región más cercana.
+     - **Location**: Selecciona la zona o región más cercana. (por ejemplo us-central1)
      - **Machine type**: Puedes usar el tipo predeterminado `e2-medium` para los nodos.
      - **Node count**: Comienza con 2 nodos.
 3. Crear el cluster:
