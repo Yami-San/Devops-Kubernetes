@@ -125,13 +125,13 @@ Limpiar recursos
    ```bash
    gcloud container clusters delete mi-cluster-gke --zone <zona> --project <tu-proyecto>
    ```
-¿Que se podria mejorar?
+¿Que se podría mejorar?
 -------------
-| Clave | Description |
+| Clave | Descripción |
 | --- | --- |
-| Autoescalamiento | Actualmente el la app como servicio está solo se escala de forma manual, pero un escalamiento automatico dependiendo de la demanda seria lo ideal. |
-| Monitoreo | Actualmente solo está el monitoreo basico por default de GCP y no uno personalizado a medida de la aplicación. |
-| Seguridad | Actualmente solo está la barrera de que solo se puede ingresar a la instancia por la cuenta de GCP pero lo ideal seria tener metodos adicionales como verificación en 2 pasos y una password en la propia VM. |
+| Auto escalamiento | Actualmente el la app como servicio está solo se escala de forma manual, pero un escalamiento automático dependiendo de la demanda sería lo ideal. |
+| Monitoreo | Actualmente solo está el monitoreo básico por default de GCP y no uno personalizado a medida de la aplicación. |
+| Seguridad | Actualmente solo está la barrera de que solo se puede ingresar a la instancia por la cuenta de GCP pero lo ideal sería tener métodos adicionales como verificación en 2 pasos y una password en la propia VM. |
 
 Que se aprendió
 ---------------
