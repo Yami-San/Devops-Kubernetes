@@ -85,10 +85,10 @@ Paso 2: Exponer el Deployment como un Servicio
    apiVersion: v1
    kind: Service
    metadata:
-     name: mi-aplicacion-service
+     name: mi-app-service
    spec:
      selector:
-       app: mi-aplicacion
+       app: mi-app
      ports:
        - protocol: TCP
          port: 80
