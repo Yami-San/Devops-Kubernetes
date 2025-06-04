@@ -125,3 +125,17 @@ Limpiar recursos
    ```bash
    gcloud container clusters delete mi-cluster-gke --zone <zona> --project <tu-proyecto>
    ```
+¿Que se podria mejorar?
+-------------
+| Clave | Description |
+| --- | --- |
+| Autoescalamiento | Actualmente el la app como servicio está solo se escala de forma manual, pero un escalamiento automatico dependiendo de la demanda seria lo ideal. |
+| Monitoreo | Actualmente solo está el monitoreo basico por default de GCP y no uno personalizado a medida de la aplicación. |
+| Seguridad | Actualmente solo está la barrera de que solo se puede ingresar a la instancia por la cuenta de GCP pero lo ideal seria tener metodos adicionales como verificación en 2 pasos y una password en la propia VM. |
+
+Que se aprendió
+---------------
+- Escalamiento de aplicaciones como servicio en GCP de forma horizontal.
+- Despliegue de aplicaciones con kubernetes en GPC.
+- Configuración inicial para usar kubernetes.
+- Gestión de recursos en GCP.
