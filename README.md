@@ -77,7 +77,7 @@ Si tienes alguna variable de entorno puedes agregarlo asi:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-    name: mi-app
+     name: mi-app
 spec:
   replicas: 2
   selector:
