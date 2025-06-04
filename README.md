@@ -55,7 +55,7 @@ Paso 1: Crear un Deployment
    metadata:
      name: mi-app
    spec:
-     replicas: 1
+     replicas: 2
      selector:
        matchLabels:
          app: mi-app
@@ -79,7 +79,7 @@ kind: Deployment
 metadata:
   name: mi-app
 spec:
-  replicas: 3
+  replicas: 2
   selector:
     matchLabels:
       app: mi-app
