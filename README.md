@@ -68,7 +68,7 @@ Paso 1: Crear un Deployment
          - name: mi-app
            image: docker.io/yamitan/mi-proyecto:latest
            ports:
-           - containerPort: 80
+           - containerPort: 3000
    ```
 
 2. Desplegar el Deployment:
@@ -92,7 +92,7 @@ Paso 2: Exponer el Deployment como un Servicio
      ports:
        - protocol: TCP
          port: 80
-         targetPort: 80
+         targetPort: 3000
      type: LoadBalancer
    ```
 
@@ -108,7 +108,7 @@ Paso 1: Escalar el Deployment
 -------------
 1. Para escalar el número de Pods en tu aplicación, ejecuta:
    ```bash
-   kubectl scale deployment mi-app --replicas=4
+   kubectl scale deployment mi-app --replicas=3
    ```
 
 2. Verifica el nuevo número de Pods con:
